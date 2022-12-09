@@ -1,0 +1,39 @@
+body{
+    background-image:url(./tess.jpg) ;
+}
+
+.heart{
+    width: 180px;
+    height: 100px;
+    position: absolute;
+    top: 70%;
+    left: 7%;
+    background: #5564BF;
+    transition: 1s;
+    transform-origin: right bottom;
+}
+
+.heart:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #ffbbd1;
+    transition: 2s;
+    transform-origin: right bottom;
+}
+
+.heart:hover{
+    transform: rotate(45deg);
+    border-top-left-radius: 50px;
+    
+    border-bottom-left-radius: 50px;
+}
+
+.heart:hover:before{
+    transform: rotate(450deg) translateY(100px); 
+    border-top-left-radius: 50px;
+    background: #5564BF;   
+    border-bottom-left-radius: 50px;
+
+}
